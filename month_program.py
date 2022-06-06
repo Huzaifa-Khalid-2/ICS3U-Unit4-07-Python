@@ -6,43 +6,17 @@
 
 
 def main():
-    # This program asks for a month and tells how many days it has
-    print("This program asks you for a month and tells how many days it has.")
+    # this function prints numbers in columns of 5
+    counter = 1000
+    # process & output
     print("")
-
-    # input
-    user_month = input("Insert any month: ")
-    print("")
-
-    # process and output
-    if user_month == "January":
-        print("31 days")
-    elif user_month == "February":
-        print("28 days (unless its a leap year)")
-    elif user_month == "March":
-        print("31 days")
-    elif user_month == "April":
-        print("30 days")
-    elif user_month == "May":
-        print("31 days")
-    elif user_month == "June":
-        print("30 days")
-    elif user_month == "July":
-        print("31 days")
-    elif user_month == "August":
-        print("31 days")
-    elif user_month == "September":
-        print("30 days")
-    elif user_month == "October":
-        print("31 days")
-    elif user_month == "November":
-        print("30 days")
-    elif user_month == "December":
-        print("31 days")
-    else:
-        print("Bro what is that answer (・_・ヾ I asked for a month.")
-    print("\nDone")
+    while counter <= 2000:
+        print(counter, " ", end="")
+        counter = counter + 1
+        if counter % 5 == 0:
+            print("\n")
 
 
 if __name__ == "__main__":
     main()
+    
